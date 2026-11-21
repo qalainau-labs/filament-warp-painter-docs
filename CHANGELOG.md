@@ -2,6 +2,17 @@
 
 All notable changes to `qalainau/filament-warp-painter` are documented here.
 
+## [1.0.1] - 2026-11-21
+
+### Changed
+
+- Crop: drag over the picture to draw the frame, the same way as Blur. Dragging inside the frame still moves it, and its corners and edges still resize it. With a shape such as 1:1 chosen, the drawn frame keeps that shape. The hint under the picture says so in all ten languages.
+
+### Fixed
+
+- Pressing Done while cropping threw the frame away and saved the picture at its old size. Done now crops to the frame first, as Apply does.
+- On phones, Apply and Cancel of the crop bar were off the right edge of the screen. The crop bar now wraps onto two rows.
+
 ## [1.0.0] - 2026-11-20
 
 ### Added
