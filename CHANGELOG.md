@@ -2,6 +2,15 @@
 
 All notable changes to `qalainau/filament-warp-painter` are documented here.
 
+## [Unreleased]
+
+## [1.0.2] - 2026-11-22
+
+### Fixed
+
+- In a field with `multiple()`, editing a picture that was not first in the field sent the edited picture to the front and changed the order. The edited picture now takes the place of the original one, and the order is saved with the form.
+- Choosing another tool (Arrow, Pen and so on, or its key) while cropping threw the frame away, so the picture kept its old size. It now crops to the frame first, as Apply and Done do. Cancel, Esc and Undo still leave the picture as it was.
+
 ## [1.0.1] - 2026-11-21
 
 ### Changed

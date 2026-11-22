@@ -395,6 +395,7 @@ php artisan vendor:publish --tag=filament-warp-painter-translations
 - Inside a `Repeater` or `Builder`, every item gets its own editor with the same settings.
 - Pictures are drawn in the browser, so text is rendered with the fonts of the device of the person pressing Done.
 - Files that are not PNG, JPEG, WebP, GIF or SVG pictures cannot be opened in the editor.
+- Pressing Done replaces the picture you opened: the edited picture takes the same place in the field (also with `multiple()` and `reorderable()`). The file that was uploaded before is not deleted from the disk, the same as when you remove a picture from any Filament upload field. To delete it, use `deleteUploadedFileUsing()` on the field.
 
 ## Testing
 
